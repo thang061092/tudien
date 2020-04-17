@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let english = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+    let vietnamese = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín', 'mười'];
+    let N = prompt('nhập từ tiếng việt');
+    let flag = false;
+    for (let i = 0; i < vietnamese.length; i++) {
+        if (N == vietnamese[i]) {
+            flag = true;
+            alert(english[i]);
+        }
+    }
+    if(!flag){
+        alert('không tìm thấy');
+    }
+
+</script>
+</body>
+</html>
